@@ -4,16 +4,16 @@
 	<head>
 		<meta charset="utf-8">	
 		<title>Calculando IMC</title>
-		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
 
 	<h1>CALCULANDO O IMC</h1>
 
-	<table>	<!--PRIMEIRO FORMULÁRIO-->
+	<form action="imc.php" method="post">
 
-		<form action="imc.php" method="post">
+	<table>	<!--PRIMEIRO FORMULÁRIO-->
 
 			<tr>
 				<td>
@@ -31,7 +31,7 @@
 				</td>
 
 				<td>
-					<input type="number" name="datanascimento1" size="5" required> 
+					<input type="date" name="datanascimento1" size="5" required> 
 				</td>
 			</tr>
 
@@ -70,10 +70,11 @@
 			</tr>	
 
 			</tr>
-
+	</table>
+	
 			<!--SEGUNDO FORMULÁRIO-->
 
-
+	<table>
 			<tr>
 				<td>
 					Informe seu nome:
@@ -90,7 +91,7 @@
 				</td>
 
 				<td>
-					<input type="number" name="datanascimento2" size="5" required> 
+					<input type="date" name="datanascimento2" size="5" required> 
 				</td>
 			</tr>
 
@@ -125,9 +126,11 @@
 					<input type="number" name="peso2" size="5" required> kg
 				</td>
 			</tr>	
+	</table>
+	
 
 			<!--TERCEIRO FORMULÁRIO-->
-
+	<table>		
 			<tr>
 				<td>
 					Informe seu nome:
@@ -144,7 +147,7 @@
 				</td>
 
 				<td>
-					<input type="number" name="datanascimento3" size="5" required> 
+					<input type="date" name="datanascimento3" size="5" required> 
 				</td>
 			</tr>
 
@@ -189,6 +192,7 @@
 				</td>
 			</tr>
 			
+	</table>
 
 		</form>	
 

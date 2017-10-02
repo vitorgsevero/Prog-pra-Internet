@@ -1,0 +1,38 @@
+table{
+
+	text-align: ;
+	width: ;
+	background-color: red;
+	margin-left: 60%;
+	margin-right: 10%;
+	margin-top: 1%;
+}
+
+h1{
+
+	text-align: center;
+	background-color: green;
+	margin-left: 60%;
+	margin-right: 15%;
+	margin-top: 5%;
+}
+
+body{
+
+	background-color: black;
+	background-image: url(imc.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-attachment: fixed;
+
+
+}
+
+
+td{
+
+	font-weight: 15px;
+	font-size: 15px;
+	font-family: Sans-serif;
+
+}
