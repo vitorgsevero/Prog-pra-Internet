@@ -28,17 +28,12 @@
 
 	function testeDtNasc($dtnasc){
 
-			echo ("<br>");
-			echo ("$dtnasc[0]<br>");
-			echo ("$dtnasc[1]<br>");
-			echo ("$dtnasc[2]<br>");
+		for ($i=0; $i<3; $i++) { 
+			
+			echo("$dtnasc[$i]");
+		}
 
 	}
-
-
-
-
-
 
 
 	testeNome($nome);
