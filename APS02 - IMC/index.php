@@ -13,7 +13,7 @@
 
 	<form action="imc.php" method="post">
 
-	<table>	<!--PRIMEIRO FORMULÁRIO-->
+	<table class="1">	<!--PRIMEIRO FORMULÁRIO-->
 
 			<tr>
 				<td>
@@ -21,7 +21,7 @@
 				</td>
 
 				<td>
-					<input type="text" name="nome1" size="20" required> 
+					<input type="text" name="nome1" size="20" placeholder="Nome Completo" required> 
 				</td>
 			</tr>
 
@@ -31,7 +31,7 @@
 				</td>
 
 				<td>
-					<input type="date" name="datanascimento1" size="5" required> 
+					<input type="date" name="datanascimento1" size="5" placeholder="" required> 
 				</td>
 			</tr>
 
@@ -49,14 +49,13 @@
 			</tr>
 
 
-
 			<tr>
 				<td>
 					Informe sua altura:
 				</td>
 
 				<td>
-					<input type="number" name="altura1" size="5" required> m 
+					<input type="number" name="altura1" size="5" placeholder="Altura em metros" required>  
 				</td>
 			</tr>	
 
@@ -65,7 +64,7 @@
 					Informe seu peso:
 				</td>
 				<td>
-					<input type="number" name="peso1" size="5" required> kg
+					<input type="number" name="peso1" size="5" placeholder="Peso em kg" required>
 				</td>
 			</tr>	
 
@@ -74,14 +73,14 @@
 	
 			<!--SEGUNDO FORMULÁRIO-->
 
-	<table>
+	<table class="2">
 			<tr>
 				<td>
 					Informe seu nome:
 				</td>
 
 				<td>
-					<input type="text" name="nome2" size="20" required> 
+					<input type="text" name="nome2" size="20" placeholder="Nome Completo" required> 
 				</td>
 			</tr>
 
@@ -114,7 +113,7 @@
 				</td>
 
 				<td>
-					<input type="number" name="altura2" size="5" required> m 
+					<input type="number" name="altura2" size="5" placeholder="Altura em metros" required>
 				</td>
 			</tr>	
 
@@ -123,21 +122,21 @@
 					Informe seu peso:
 				</td>
 				<td>
-					<input type="number" name="peso2" size="5" required> kg
+					<input type="number" name="peso2" size="5" placeholder="Peso em kg" required> 
 				</td>
 			</tr>	
 	</table>
 	
 
 			<!--TERCEIRO FORMULÁRIO-->
-	<table>		
+	<table class="3">		
 			<tr>
 				<td>
 					Informe seu nome:
 				</td>
 
 				<td>
-					<input type="text" name="nome3" size="20" required> 
+					<input type="text" name="nome3" size="20" placeholder="Nome Completo" required> 
 				</td>
 			</tr>
 
@@ -164,15 +163,13 @@
 				</td>
 			</tr>
 
-
-
 			<tr>
 				<td>
 					Informe sua altura:
 				</td>
 
 				<td>
-					<input type="number" name="altura3" size="5" required> m 
+					<input type="number" name="altura3" size="5" placeholder="Altura em metros" required> 
 				</td>
 			</tr>	
 
@@ -181,22 +178,22 @@
 					Informe seu peso:
 				</td>
 				<td>
-					<input type="number" name="peso3" size="5" required> kg
+					<input type="number" name="peso3" size="5" placeholder="Peso em kg" required> 
 				</td>
 			</tr>	
+			
+	</table>
 
+	<table>
 			<tr>
 				<td> 
 					<input type="submit" value="Calcular IMC">
 					<input type="reset" value="Limpar Valores">
 				</td>
 			</tr>
-			
 	</table>
 
 		</form>	
-
-	</table>
 
 	</body>
 
