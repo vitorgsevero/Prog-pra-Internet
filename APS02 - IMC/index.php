@@ -13,7 +13,7 @@
 
 	<form action="imc.php" method="post">
 
-	<table class="1">	<!--PRIMEIRO FORMULÁRIO-->
+	<table>	<!--PRIMEIRO FORMULÁRIO-->
 
 			<tr>
 				<td>
@@ -73,7 +73,7 @@
 	
 			<!--SEGUNDO FORMULÁRIO-->
 
-	<table class="2">
+	<table>
 			<tr>
 				<td>
 					Informe seu nome:
@@ -129,7 +129,7 @@
 	
 
 			<!--TERCEIRO FORMULÁRIO-->
-	<table class="3">		
+	<table>		
 			<tr>
 				<td>
 					Informe seu nome:
@@ -187,9 +187,13 @@
 	<table>
 			<tr>
 				<td> 
+				</td>
+
+				<td>
 					<input type="submit" value="Calcular IMC">
 					<input type="reset" value="Limpar Valores">
 				</td>
+
 			</tr>
 	</table>
 
