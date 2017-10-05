@@ -1,4 +1,4 @@
-table{
+	table{
 	
 	background-color: red;
 	margin-left: 60%;
@@ -8,16 +8,11 @@ table{
 
 h1{
 
-	color: white; 
 	text-align: center;
 	background-color: green;
 	margin-left: 0%;
 	margin-right: 0%;
-<<<<<<< HEAD
 	margin-top: 5%;
-=======
-	margin-top: 2%;
->>>>>>> e401052332cb73adea7c63167274d8b1496daa65
 }
 
 body{
@@ -25,7 +20,7 @@ body{
 	background-color: black;
 	background-image: url(imc.jpg);
 	background-repeat: no-repeat;
-	background-position:  left;
+	background-position: left;
 	background-attachment: fixed;
 }
 
