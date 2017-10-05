@@ -99,6 +99,7 @@
 			echo("Você não informou valores válidos!"); 
 		}else{
 
+<<<<<<< HEAD
 
 	//FUNCÕES DE PROCESSAMENTO DAS ENTRADAS		
 
@@ -108,6 +109,9 @@
 			
 			echo("<br>Nome do aluno " . $i . ": $nome[$i]");
 		}
+=======
+
+>>>>>>> e401052332cb73adea7c63167274d8b1496daa65
 
 	}		
 
@@ -120,6 +124,7 @@
 
 	}
 
+<<<<<<< HEAD
 
 
 
@@ -128,6 +133,16 @@
 	function calculaIMC($altura, $peso){ //imc=peso/altura2
 
 		for ($i=0; $i<3; $i++) { 
+=======
+	function calculaIMC($altura, $peso){ //imc=peso/altura2
+
+		for ($i=0; $i<3; $i++) { 
+
+			$imc[$i] = $peso[$i]/($altura[$i]*$altura[$i]);
+		
+			echo ("<br>IMC: $imc[$i]");
+
+>>>>>>> e401052332cb73adea7c63167274d8b1496daa65
 
 			$imc[$i] = $peso[$i]/($altura[$i]*$altura[$i]);
 		
@@ -137,6 +152,7 @@
 
 	}
 
+<<<<<<< HEAD
 
 
 	//CHAMADAS DAS FUNÇÕES
@@ -153,6 +169,10 @@
 
 }//fechamento do if else que verifica se os valores informados estão corretos para poder fazer o cálculo
 
+=======
+	calculaIMC($altura, $peso);
+
+>>>>>>> e401052332cb73adea7c63167274d8b1496daa65
 	?>
 	
 	<br>
