@@ -95,6 +95,7 @@
 	$altura = array($_POST['altura1'], $_POST['altura2'], $_POST['altura3']);
 	$peso = array($_POST['peso1'], $_POST['peso2'], $_POST['peso3']);
 
+
 		if (!(is_numeric($altura[0])) || !(is_numeric($altura[1])) || !(is_numeric($altura[2])) || !(is_numeric($peso[0])) || !(is_numeric($peso[1])) || !(is_numeric($peso[2]))){
 			echo("Você não informou valores válidos!"); 
 		}else{
@@ -106,16 +107,16 @@
 
 		for ($i=0; $i<3; $i++) { 
 			
-			echo("<br>Nome do aluno " . $i . ": $nome[$i]");
+			echo("<b><br>Nome do aluno " . $i . ": </b>" . $nome[$i]);
 		}
 
 	}		
 
-	function imprimeDtNasc($dtnasc){
+	function imprimeDtNasc($dtnasc, $nome){
 
 		for ($i=0; $i<3; $i++) { 
 			
-			echo("<br>Data de nascimento do aluno " . $i . ": $dtnasc[$i]");
+			echo("<br><b>" .$nome[$i] .  ", sua data de nascimento:</b>" .  $dtnasc[$i]);
 		}
 
 	}
@@ -126,8 +127,66 @@
 
 			$imc[$i] = $peso[$i]/($altura[$i]*$altura[$i]);
 		
-			echo ("<br>IMC do aluno " . $i . ": $imc[$i]");
+			echo ("<b><br>IMC do aluno " . $i . ": </b>" . $imc[$i]);
 		}
+
+	function categoriaIMC($altura, $peso, $nome){
+
+		for ($i=0; $i<3; $i++) {
+
+			$imc[$i] = $peso[$i]/($altura[$i]*$altura[$i]); 
+
+	
+			if($imc[$i]<18.5){
+
+				$categoria[$i] = "Abaixo do Peso";
+
+				echo("<br><b>Categoria do ".$nome[$i].":</b> " . $categoria[$i]);
+
+			}
+
+			if($imc[$i]>=18.5 and $imc[$i]<24.9){
+
+				$categoria[$i] = "Peso Normal";
+
+				echo("<br><b>Categoria do ".$nome[$i].":</b> " . $categoria[$i]);
+
+			}
+
+			if($imc[$i]>=25.0 and $imc[$i]<29.9){
+
+				$categoria[$i] = "Sobreso";
+
+				echo("<br><b>Categoria do ".$nome[$i].":</b> " . $categoria[$i]);
+
+			}
+
+			if($imc[$i]>=30.0 and $imc[$i]<34.9){
+
+				$categoria[$i] = "Obesidade Grau I";
+
+				echo("<br><b>Categoria do ".$nome[$i].":</b> " . $categoria[$i]);
+
+			}
+
+			if($imc[$i]>=35.0 and $imc[$i]<39.9){
+
+				$categoria[$i] = "Obesidade Grau II";
+
+				echo("<br><b>Categoria do ".$nome[$i].":</b> " . $categoria[$i]);
+			}
+
+			if($imc[$i]>=40){
+
+				$categoria[$i] = "Obesidade Grau II";
+
+				echo("<br><b>Categoria do ".$nome[$i].":</b> " . $categoria[$i]);
+
+			}
+
+		}
+
+	}	
 
 
 	}
@@ -135,9 +194,11 @@
 	//CHAMADAS DAS FUNÇÕES
 
 	calculaIMC($altura, $peso);
-
-
-	imprimeDtNasc($dtnasc);
+	echo("<br>");
+	categoriaIMC($altura, $peso, $nome);
+	echo("<br>");
+	imprimeDtNasc($dtnasc, $nome);
+	echo("<br>");
 	imprimeNome($nome);
 
 }//fechamento do if else que verifica se os valores informados estão corretos para poder fazer o cálculo
